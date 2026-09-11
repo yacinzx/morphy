@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORPHY - Portfolio</title>
+    <link rel="icon" type="image/jpeg" href="assets/1.jpg">
+        <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee&family=Cairo:wght@800;900&family=Inter:wght@300;400;600&family=Katibeh&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Orbitron:wght@500;700;900&family=Outfit:wght@300;400;600;700&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="loading">
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader__inner">
+            <div class="preloader__logo">MORPHY</div>
+            <div class="preloader__bar">
+                <div class="preloader__bar-fill" id="preloaderFill"></div>
+            </div>
+            <div class="preloader__percent" id="preloaderPercent">0%</div>
+        </div>
+    </div>
+
+    <!-- Background Canvas Layer -->
+    <div class="canvas-container">
+        <canvas id="scroll-canvas"></canvas>
+    </div>
+
+    <!-- Text Layer -->
+    <div class="scrollable-text-layer" id="hero">
+        <div class="behind-text">
+            <span class="text-line">حبس تــــــــــــــــــــــــــحبــاس</span>
+            <span class="text-line">و ابــــــــــــــــــــــــــــــدا تبدا</span>
+            <span class="text-line">" مورفي "</span>
+        </div>
+    </div>
+
+    <!-- Foreground Canvas Layer -->
+    <div class="canvas-container foreground-canvas-container">
+        <canvas id="foreground-canvas"></canvas>
+    </div>
+
+    <!-- Foreground Content -->
+    <div class="content-layer" id="content-layer">
+
+        <section class="hero-section">
+            <div class="nav-container">
+                <a href="#hero" class="nav-logo">MORPHY</a>
+                <div class="nav-pill">
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#posts">Posts</a>
+                </div>
+                <div class="hamburger">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <a href="#posts">Posts</a>
+            </div>
+        </section>
+
+        <section class="who-we-are fade-in" id="about">
+            <h2>Who I<br>Am?</h2>
+            <p><span>I'm</span> Mohamed Abdenour—better known as Morphy. I'm a creator and loud thinker vibing at
+                a high frequency, blending raw thoughts with a psychoglamorous style. Welcome to my space!.</p>
+        </section>
+
+        <div class="marquee-container fade-in">
+            <div class="marquee-text">
+                <span class="marquee-item"><span class="marquee-star">✦</span> حبس تحباس <span class="marquee-star">✦</span></span>
+                <span class="marquee-item"><span class="marquee-star">✦</span> و ابدا تبدا <span class="marquee-star">✦</span></span>
+                <span class="marquee-item"><span class="marquee-star">✦</span> حبس تحباس <span class="marquee-star">✦</span></span>
+                <span class="marquee-item"><span class="marquee-star">✦</span> و ابدا تبدا <span class="marquee-star">✦</span></span>
+                <span class="marquee-item"><span class="marquee-star">✦</span> حبس تحباس <span class="marquee-star">✦</span></span>
+                <span class="marquee-item"><span class="marquee-star">✦</span> و ابدا تبدا <span class="marquee-star">✦</span></span>
+                <span class="marquee-item"><span class="marquee-star">✦</span> حبس تحباس <span class="marquee-star">✦</span></span>
+                <span class="marquee-item"><span class="marquee-star">✦</span> و ابدا تبدا <span class="marquee-star">✦</span></span>
+            </div>
+        </div>
+
+        <section class="tube-section fade-in" id="contact">
+            <div class="tube-grid">
+                <div class="tube-column">
+                    <div class="tube-card fade-in" aria-label="Instagram">
+                        <a href="https://www.instagram.com/morphyyyy_369/" target="_blank" class="tube-card__link">
+                            <div class="tube-card__fluid">
+                                <div class="tube-card__image tube-card__image--instagram"></div>
+                            </div>
+                            <div class="tube-card__label">
+                                <span class="tube-card__name">Instagram</span>
+                                <span class="tube-card__icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tube-card fade-in" aria-label="TikTok">
+                        <a href="https://www.tiktok.com/@morphyyyy__" target="_blank" class="tube-card__link">
+                            <div class="tube-card__fluid">
+                                <div class="tube-card__image tube-card__image--tiktok"></div>
+                            </div>
+                            <div class="tube-card__label">
+                                <span class="tube-card__name">TikTok</span>
+                                <span class="tube-card__icon" aria-hidden="true"><i class="fa-brands fa-tiktok"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="tube-column">
+                    <div class="tube-card fade-in" aria-label="Mail">
+                        <a href="mailto:mohamedabdenour369@gmail.com" class="tube-card__link">
+                            <div class="tube-card__fluid">
+                                <div class="tube-card__image tube-card__image--mail"></div>
+                            </div>
+                            <div class="tube-card__label">
+                                <span class="tube-card__name">Mail</span>
+                                <span class="tube-card__icon" aria-hidden="true"><i class="fa-solid fa-envelope"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tube-card fade-in" aria-label="WhatsApp">
+                        <a href="https://wa.me/+213669393287" target="_blank" class="tube-card__link">
+                            <div class="tube-card__fluid">
+                                <div class="tube-card__image tube-card__image--whatsapp"></div>
+                            </div>
+                            <div class="tube-card__label">
+                                <span class="tube-card__name">WhatsApp</span>
+                                <span class="tube-card__icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="marquee-container fade-in">
+            <div class="marquee-text">
+                <span class="marquee-item2"><span class="marquee-star">✦</span> MORPHY <span class="marquee-star">✦</span></span>
+                <span class="marquee-item2"><span class="marquee-star">✦</span> Mohamed Abdenour <span class="marquee-star">✦</span></span>
+                <span class="marquee-item2"><span class="marquee-star">✦</span> MORPHY <span class="marquee-star">✦</span></span>
+                <span class="marquee-item2"><span class="marquee-star">✦</span> Mohamed Abdenour <span class="marquee-star">✦</span></span>
+                <span class="marquee-item2"><span class="marquee-star">✦</span> MORPHY <span class="marquee-star">✦</span></span>
+                <span class="marquee-item2"><span class="marquee-star">✦</span> Mohamed Abdenour <span class="marquee-star">✦</span></span>
+                <span class="marquee-item2"><span class="marquee-star">✦</span> MORPHY <span class="marquee-star">✦</span></span>
+                <span class="marquee-item2"><span class="marquee-star">✦</span> Mohamed Abdenour <span class="marquee-star">✦</span></span>
+            </div>
+        </div>
+        <section class="glass-section fade-in" id="posts">
+            <div class="glass-content">
+                <h2>Soon!</h2>
+                <p>content and elements will be added here soon (yacinz is here 😉).</p>
+            </div>
+        </section>
+
+
+
+        <!-- Fixed Footer Placed In Standard Flow -->
+        <div class="footer fade-in">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">MORPHY</a>
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#posts">Posts</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <p class="footer-copy">© 2026 Created by YACINZ. All rights reserved.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
